@@ -20,7 +20,6 @@ node {
         execute("./gradlew assemble")
 
     }
-
     stage ('Test'){
         echo 'now testing'
         execute("./gradlew connectedCheck")
