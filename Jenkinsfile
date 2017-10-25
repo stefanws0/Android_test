@@ -5,7 +5,7 @@ node {
     stage ('Clone') {
         echo 'now cloning'
         checkout scm
-        sh "chmode +x gradlew"
+        sh "chmod +x gradlew"
 
     }
 
