@@ -12,7 +12,6 @@ node {
     stage ('Clean') {
         echo 'now cleaning'
         execute("./gradlew clean")
-
     }
     stage ('Build') {
         echo 'now building'
