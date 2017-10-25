@@ -18,7 +18,6 @@ node {
     stage ('Build') {
         echo 'now building'
         execute("./gradlew assemble")
-
     }
     stage ('Test'){
         echo 'now testing'
