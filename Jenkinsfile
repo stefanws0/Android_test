@@ -11,15 +11,15 @@ node {
 
     stage ('Clean') {
         echo 'now cleaning'
-        execute("./gradlew clean")
+        sh "./gradlew clean"
     }
     stage ('Build') {
         echo 'now building'
-        execute("./gradlew assemble")
+        sh "./gradlew assemble"
     }
     stage ('Test'){
         echo 'now testing'
-        execute("./gradlew connectedCheck")
+        sh "./gradlew connectedCheck"
 
     }
 
