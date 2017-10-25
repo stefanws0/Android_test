@@ -14,7 +14,6 @@ node {
         execute("./gradlew clean")
 
     }
-
     stage ('Build') {
         echo 'now building'
         execute("./gradlew assemble")
