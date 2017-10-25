@@ -22,5 +22,8 @@ node {
         sh "./gradlew connectedCheck"
 
     }
+    stage ('getDevices') {
+        sh "curl -I http://localhost:3000/api/devices"
+    }
 
 }
