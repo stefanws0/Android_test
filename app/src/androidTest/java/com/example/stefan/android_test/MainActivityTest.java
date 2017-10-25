@@ -1,5 +1,4 @@
 package com.example.stefan.android_test;
-//hallo
 
 import android.support.test.espresso.ViewInteraction;
 import android.support.test.rule.ActivityTestRule;
