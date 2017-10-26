@@ -1,7 +1,6 @@
 #!groovy
 
 node {
-
     stage ('Clone') {
         echo 'now cloning'
         checkout scm
