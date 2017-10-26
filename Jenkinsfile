@@ -23,7 +23,7 @@ node {
 
     }
     stage ('getDevices') {
-        sh 'curl -i -H "Accept: application/json" -H "Content-Type: application/json" http://localhost:3000/api/devices'
+        sh 'curl -H "Accept: application/json" -H "Content-Type: application/json" http://localhost:3000/api/devices'
     }
 
 }
