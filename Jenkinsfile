@@ -23,7 +23,8 @@ node {
 
     }
     stage ('getDevices') {
-        sh "curl -I http://localhost:3000/api/devices"
+        process = [ 'bash', '-c', 'curl -I http://localhost:3000/api/devices' ].execute().text
+        println process.text;
     }
 
 }
