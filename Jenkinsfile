@@ -14,6 +14,7 @@ node {
     stage ('Build') {
         echo 'now building'
         sh "./gradlew assemble"
+        sh "./gradlew --stop"
     }
     stage ('Test'){
         echo 'now testing'
