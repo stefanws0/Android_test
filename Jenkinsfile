@@ -17,6 +17,5 @@ node {
     stage ('Test'){
         echo 'now testing'
         sh 'curl -H "Accept: application/json" -H "Content-Type: application/json" http://localhost:3000/api/runtest'
-
     }
 }
