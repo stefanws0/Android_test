@@ -23,8 +23,7 @@ node {
 
     }
     stage ('getDevices') {
-        process = [ 'bash', '-c', 'curl -I http://localhost:3000/api/devices' ].execute().text
-        println process.text;
+        sh "curl -i -H "Accept: application/json" -H "Content-Type: application/json" http://localhost:3000/api/devices"
     }
 
 }
