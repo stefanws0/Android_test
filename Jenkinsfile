@@ -8,6 +8,7 @@ node {
     }
     stage ('Clean') {
         echo 'now cleaning'
+        sh "./gradlew --stop"
         sh "./gradlew clean"
     }
     stage ('Build') {
